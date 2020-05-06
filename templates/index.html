@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}InShorts{% endblock title %}
+
+{% block content %}
+
+<div class="main">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 glow">Hacker<span id="offset">News InShorts</span></h1>
+        </div>
+    </div>
+    <div class="ncard">
+        <a href="/reload">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Reload
+        </a>
+    </div>
+    {% for item in data %}
+    <div class="card">
+        <h4>{{ item['title'] }} </h4><br>
+        <br>
+        VOTES: {{ item['votes'] }} <br>
+        <br>
+        <a href="{{ item['link'] }}" rel="noopener noreferrer" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Read More
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock content %}

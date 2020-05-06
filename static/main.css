@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(#141e30, #243b55);
+    height: 100vh;
+}
+.jumbotron {
+    background: none
+}
+
+.card{
+    padding: 1.01em;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    background: none;
+    box-shadow:0 4px 5px 0 rgb(255, 255, 255),0 4px 15px 0 rgb(255, 255, 255);
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 9px;
+}
+
+.card a {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 4px
+}
+.card a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+  
+.card a span {
+    position: absolute;
+    display: block;
+}
+
+
+.glow {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #ff5a5a;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0101, 0 0 40px #ff0101, 0 0 50px #ff0101, 0 0 60px #ff0101, 0 0 70px #ff0101;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0101, 0 0 40px #ff0101, 0 0 50px #ff0101, 0 0 60px #ff0101, 0 0 70px #ff0101, 0 0 80px #ff0101;
+    }
+}
+
+.glow {
+    letter-spacing: 5px;
+    animation: text-flicker 15s linear infinite;
+}
+
+@media(max-width: 400px) {
+  .glow {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}
+
+#offset {
+    animation: letter-flicker 1s linear infinite;
+}
+  
+@keyframes text-flicker {
+    0% {
+        opacity:0.1;
+        text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgb(255, 0, 0);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+}
+
+@keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(255, 0, 0);
+    }
+}
+
+
+#sticky-footer {
+    flex-shrink: none;
+    background-color: linear-gradient(#141e30, #243b55);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.ncard a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f40303;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 5px;
+    letter-spacing: 4px
+}
+.ncard a:hover {
+    background: #f40303;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f40303,
+                0 0 25px #f40303,
+                0 0 50px #f40303,
+                0 0 100px #f40303;
+}
