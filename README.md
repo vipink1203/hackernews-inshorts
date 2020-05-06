@@ -3,8 +3,8 @@ Flask Application to fetch the top news from https://news.ycombinator.com/
 
 # Clone the repository
 ```
-$ git clone 
-$ cd 
+$ git clone https://github.com/vipink1203/hackernews-inshorts.git
+$ cd hackernews-inshorts/
 ```
 
 # Run the below commands
