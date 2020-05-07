@@ -193,14 +193,34 @@ body {
 
 #sticky-footer {
     flex-shrink: none;
-    background-color: linear-gradient(#141e30, #243b55);
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(67,67,67);
+    background: linear-gradient(0deg, rgba(9, 79, 236, 0.38) 0%, rgba(255, 255, 255, 0.29) 55%);
+    
 }
+
+#sticky-footer a {
+  color: #00f2ff;
+  text-decoration: none;
+}
+
+#sticky-footer a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
 
 .ncard a {
     position: relative;
