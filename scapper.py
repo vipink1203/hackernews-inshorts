@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 res = requests.get('https://news.ycombinator.com/news')
 res2 = requests.get('https://news.ycombinator.com/news?p=2')
@@ -25,4 +26,12 @@ def create_hn():
             points = int(vote[0].getText().replace(' points', ''))
             if points > 100:
                 hn.append({'title': title, 'link': href, 'votes': points})
+
+        for item in hn:
+            if re.search(r'^item', item["link"]):
+                item['link'] = str(
+                    'https://news.ycombinator.com/') + item['link']
     return sorted(hn, key=lambda k: k['votes'], reverse=True)
+
+
+create_hn()
