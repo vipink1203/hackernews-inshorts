@@ -36,17 +36,12 @@ body {
 
 .card a {
     position: relative;
-    font-family: 'Orbitron', sans-serif;
     display: inline-block;
-    padding: 14px 10px;
+    padding: 5px 5px;
     color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 15px;
-    letter-spacing: 4px
+    margin-top: 0px;
 }
 .card a:hover {
     background: #03e9f4;

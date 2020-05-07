@@ -23,14 +23,14 @@
     <div class="card">
         <h4 style="font-size:2vw;">{{ item['title'] }} </h4><br>
         <br>
-        VOTES: {{ item['votes'] }} <br>
+        <p>VOTES: {{ item['votes'] }}</p><br>
         <br>
         <a style="font-size:2vw;" href="{{ item['link'] }}" rel="noopener noreferrer" target="_blank">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Read >>
+            READ <i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
     </div>
     {% endfor %}
