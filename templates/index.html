@@ -19,6 +19,7 @@
             Reload
         </a>
     </div>
+    <button onclick="myFunction()" class="btn btn-light">Toggle dark mode</button>
     {% for item in data %}
     <div class="card">
         <h4 style="font-size:2vw;">{{ item['title'] }} </h4><br>
@@ -30,6 +31,15 @@
             <span></span>
             <span></span>
             <span></span>
+
+            VIEW <i class="fa fa-book" aria-hidden="true"></i>
+        </a>
+        <a style="font-size:2vw;" href="{{ item['link'] }}" rel="noopener noreferrer" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
             READ <i class="fa fa-external-link" aria-hidden="true"></i>
         </a>
     </div>

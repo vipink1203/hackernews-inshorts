@@ -4,6 +4,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: auto;
+    background-color: #243b55;
+    color: white;
 }
 
 body {
@@ -11,9 +13,7 @@ body {
     padding:0;
     font-family: sans-serif;
     font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
     text-align: center;
-    background: linear-gradient(#141e30, #243b55);
     height: 100vh;
 }
 .jumbotron {
@@ -243,4 +243,9 @@ body {
                 0 0 25px #f40303,
                 0 0 50px #f40303,
                 0 0 100px #f40303;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
 }
