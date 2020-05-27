@@ -13,4 +13,4 @@ $ pip3 install -r requirements.txt
 $ python3 server.py
 ```
 
-<img src="https://github.com/vipink1203/repoimages/blob/master/hackerInshorts.png" width="950">
+<img src="https://github.com/vipink1203/repoimages/blob/master/hackernews.gif" width="950">
